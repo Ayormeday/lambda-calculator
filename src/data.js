@@ -3,7 +3,6 @@
 // Export them as necessary and import each array into its appropriate
 // file. No real tricks here just be aware of what is in each array
 // and how you'll access the data.
-import Number from "./components/ButtonComponents/NumberButtons/Numbers"
 
 const numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "."];
 
@@ -33,4 +32,4 @@ const operators = [
 const specials = ["C", "+/-", "%"];
 
 
-export default {numbers,operators, specials}
+export {numbers, operators, specials}
