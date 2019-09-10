@@ -17,11 +17,11 @@ const Numbers = (props) => {
       {numbers.map(data => {
         return (
           <Button number={data} />
-          )}
+          )})
         }
 
     </div>
-  );
-};
+  
+  )};
 
 export default Number 
