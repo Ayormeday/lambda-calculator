@@ -1,12 +1,12 @@
 import React from "react";
 
-const Display = (props) => {
-
+const Display = ({ display }) => {
   return (
-  <div className="display">
-    {props.digit}
-  {/* Display any props data here */}
-  </div>);
+    <div className="display">
+      {/* Display any props data here */}
+      {display}
+    </div>
+  );
 };
 
-export default Display
+export default Display;

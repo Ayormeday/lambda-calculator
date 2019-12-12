@@ -1,13 +1,18 @@
 import React from "react";
 
-const NumberButton = (props) => {
-  const { number } = props
+export const NumberButton = ({ number, onClick }) => {
+  const button = e => onClick(number);
   return (
-    <button> {number}
-      {/* Display a button element rendering the data being passed 
-      down from the parent container on props */}
-    </button>
+    <>
+      {
+        /* Display a button element rendering the data being passed down from the parent container on props */
+        <button
+          className={Number(number) === 0 ? "large" : null}
+          onClick={button}
+        >
+          {number}
+        </button>
+      }
+    </>
   );
 };
-
-export default NumberButton
